@@ -1,0 +1,52 @@
+	.logo{
+		font-size:3em;
+	}
+	.domain{
+		font-size:2.5em;
+	}
+	.slogan{
+		font-size:1.5em;
+	}
+	.menu{
+		font-size:1.5em;
+	}
+	.content{
+		font-size:1em;
+                margin: 50px;
+	}
+	body{
+		margin: 2em;
+		font-family: sans-serif;
+                background-color: #FFE1F0;
+	}
+	.contact ul li{
+		padding-bottom: .2em;
+		padding-top: .2em;
+	}
+	a:link, a:visited {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+	}
+	a:hover, a:active {
+        color: white;
+	background-color: black;
+	}
+	label{
+	font-weight: bold;
+	}
+        .wrapper{
+		margin-left: 200px;
+	}
+	.left{
+		float: left;
+                width: 200px;
+                margin-left: -200px;
+	}
+        .right{
+		float: right;
+                width: 100%;
+	}
+        .foot{
+		clear: both;
+	}

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>zcms3</display-name>
+  <servlet>
+  	<servlet-name>home</servlet-name>
+  	<servlet-class>com.zencherry.html.home</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>home</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>home</servlet-name>
+  	<url-pattern></url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>about</servlet-name>
+  	<servlet-class>com.zencherry.html.about</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>about</servlet-name>
+  	<url-pattern>/about</url-pattern>
+  </servlet-mapping>
+
+  
+
+
+<servlet>
+  	<servlet-name>hosting</servlet-name>
+  	<servlet-class>com.zencherry.html.hosting</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>hosting</servlet-name>
+  	<url-pattern>/hosting</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  	<servlet-name>support</servlet-name>
+  	<servlet-class>com.zencherry.html.support</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>support</servlet-name>
+  	<url-pattern>/support</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  	<servlet-name>programming</servlet-name>
+  	<servlet-class>com.zencherry.html.programming</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>programming</servlet-name>
+  	<url-pattern>/programming</url-pattern>
+  </servlet-mapping>
+  
+
+
+  
+  <servlet>
+  	<servlet-name>portfolio</servlet-name>
+  	<servlet-class>com.zencherry.html.portfolio</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>portfolio</servlet-name>
+  	<url-pattern>/portfolio</url-pattern>
+  </servlet-mapping>
+
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>staff</servlet-name>
+  	<servlet-class>com.zencherry.html.staff</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>staff</servlet-name>
+  	<url-pattern>/staff</url-pattern>
+  </servlet-mapping>
+
+  
+  
+  <servlet>
+  	<servlet-name>contact</servlet-name>
+  	<servlet-class>com.zencherry.html.contact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>contact</servlet-name>
+  	<url-pattern>/contact</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+  	<servlet-name>sendcontact</servlet-name>
+  	<servlet-class>com.zencherry.html.sendcontact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>sendcontact</servlet-name>
+  	<url-pattern>/sendcontact</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+  <servlet>
+  	<servlet-name>privacy</servlet-name>
+  	<servlet-class>com.zencherry.html.privacy</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>privacy</servlet-name>
+  	<url-pattern>/privacy</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+  <servlet>
+  	<servlet-name>rights</servlet-name>
+  	<servlet-class>com.zencherry.html.rights</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>rights</servlet-name>
+  	<url-pattern>/rights</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+  	<servlet-name>install</servlet-name>
+  	<servlet-class>com.zencherry.html.install</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>install</servlet-name>
+  	<url-pattern>/install</url-pattern>
+  </servlet-mapping>
+
+
+
+
+  
+  
+  
+  <error-page>
+    <error-code>401</error-code>
+    <location>/WEB-INF/jsp/401.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>403</error-code>
+    <location>/WEB-INF/jsp/403.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/jsp/404.jsp</location>
+  </error-page>
+  
+  
+ <context-param>
+    <param-name>url</param-name>
+    <param-value>localhost:3306/rodrigov_zendb</param-value>
+  </context-param>
+  <context-param>
+    <param-name>user</param-name>
+    <param-value>rodrigov_zen</param-value>
+  </context-param>
+  <context-param>
+    <param-name>pass</param-name>
+    <param-value>1234</param-value>
+  </context-param>
+  <context-param>
+    <param-name>email</param-name>
+    <param-value>zcontact@zencherry.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>emailpass</param-name>
+    <param-value>xxxxx</param-value>
+  </context-param>
+  <context-param>
+    <param-name>smtp</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  <context-param>
+    <param-name>starttls</param-name>
+    <param-value>false</param-value>
+  </context-param>
+  <context-param>
+    <param-name>host</param-name>
+    <param-value>mail.zencherry.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>port</param-name>
+    <param-value>2525</param-value>
+  </context-param>
+  
+  
+  
+  
+</web-app>
