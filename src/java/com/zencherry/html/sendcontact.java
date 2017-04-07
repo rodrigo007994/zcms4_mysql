@@ -29,6 +29,7 @@ public class sendcontact extends HttpServlet {
         String message=request.getParameter("message");
         
         String configemail = getServletContext().getInitParameter("email");
+        String configemailuser = getServletContext().getInitParameter("emailuser");
 	String configemailpass = getServletContext().getInitParameter("emailpass");
 	String configsmtp = getServletContext().getInitParameter("smtp");
 	String configstarttls = getServletContext().getInitParameter("starttls");
@@ -42,7 +43,7 @@ public class sendcontact extends HttpServlet {
 		"Email: "+email+"\n"+
 		"Phone: "+phone+"\n"+
 		"Regarding: "+regarding+"\n"+
-		"Message: "+message+"\n",configemail,configemailpass,configsmtp,configstarttls,confighost,configport);
+		"Message: "+message+"\n",configemail,configemailuser,configemailpass,configsmtp,configstarttls,confighost,configport);
         request.setAttribute("zcontent", "<h3>Information sent!</h3><p>We will reach you as soon as possible<br><br>Greetings<br><br>ZenCherry Team</p>");
         RequestDispatcher view = request.getRequestDispatcher("WEB-INF/jsp/base.jsp");
         view.forward(request, response);

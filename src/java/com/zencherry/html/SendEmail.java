@@ -13,7 +13,7 @@ import javax.mail.Authenticator;
 
 public class SendEmail {
 
-	public static void Send(String content,String configemail,String configemailpass,String configsmtp,String configstarttls,String confighost,String configport) {
+	public static void Send(String content,String configemail, String configemailuser,String configemailpass,String configsmtp,String configstarttls,String confighost,String configport) {
 
 		final String username = configemail;
 		final String password = configemailpass;
